@@ -1,12 +1,26 @@
 <?php
 $page_title = '';
-$page_title_raw = 'Chemical Supplier & Trader in Delhi NCR | Aggarwal Publicity & Marketing';
+$page_title_raw = 'Aggarwal Publicity & Marketing Pvt. Ltd. – Chemical Traders';
 $base = APM_BASE_URL;
 $meta_description = 'ISO certified manufacturer & trader in high-purity Paraformaldehyde, Melamine, Phthalic Acid & Spray Chemicals in Delhi NCR, India since 1994.';
-$meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New Delhi, ISO certified chemical manufacturer, Paraformaldehyde supplier India, Melamine trader India, high purity industrial chemicals India';
+$meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New Delhi, ISO certified chemical manufacturer, Paraformaldehyde supplier India, Melamine trader India, high purity industrial chemicals India, Ercros Paraformaldehyde, Balaji Paraformaldehyde';
 ?>
 
 <section class="hero-section" aria-label="Hero">
+  <video class="hero-video-bg" id="hero-video" muted loop playsinline preload="metadata" poster="<?php echo apm_asset('images/hero-poster.jpg'); ?>" aria-hidden="true">
+    <source src="<?php echo apm_asset('videos/aggarwalpublicity.mp4'); ?>" type="video/mp4">
+  </video>
+  <div class="hero-video-overlay" aria-hidden="true"></div>
+  <script>
+  (function () {
+    var v = document.getElementById('hero-video');
+    if (v && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      v.setAttribute('autoplay', '');
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+    }
+  })();
+  </script>
   <div class="hero-grid-overlay" aria-hidden="true"></div>
   <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
   <div class="container">
@@ -21,43 +35,18 @@ $meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New D
           <span class="line-accent">Laboratory Chemicals</span>
           & Solvents
         </h1>
-        <p class="hero-desc">Aggarwal Publicity & Marketing Pvt. Ltd. &mdash; India's trusted chemical traders — supplying high-purity Paraformaldehyde, Spray Chemicals, Melamine, and Phthalic Acid. Delivering quality to industries since 2001.</p>
-        <div class="hero-actions">
-          <a href="<?php echo $base; ?>/products" class="btn btn-primary btn-lg">⚗️ Our Products</a>
-          <a href="<?php echo $base; ?>/contact" class="btn btn-outline btn-lg">📞 Get a Quote</a>
-        </div>
+        <p class="hero-desc">Aggarwal Publicity & Marketing Pvt. Ltd. &mdash; India's trusted chemical Distributors,Traders,Importers and Exporters — supplying high-purity Paraformaldehyde, Spray Chemicals, Melamine, and Phthalic Acid. Delivering quality to industries since 2001.</p>
         <div class="hero-stats">
           <div class="hero-stat"><strong>20<sup>+</sup></strong><small>Years Experience</small></div>
           <div class="hero-stat"><strong>500<sup>+</sup></strong><small>Clients Served</small></div>
           <div class="hero-stat"><strong>4</strong><small>Core Products</small></div>
         </div>
       </div>
-      <div class="hero-visual-card" aria-hidden="true">
-        <div class="hero-iso-badge"><div class="hero-iso-badge-inner"><span>ISO</span><span>9001</span></div></div>
-        <svg class="hero-mol-svg" viewBox="0 0 300 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="150" cy="140" r="20" fill="#2E7FC1" opacity=".9"/>
-          <circle cx="90"  cy="80"  r="14" fill="#A8D4F0" opacity=".75"/>
-          <circle cx="210" cy="80"  r="14" fill="#A8D4F0" opacity=".75"/>
-          <circle cx="70"  cy="180" r="14" fill="#E8A020" opacity=".75"/>
-          <circle cx="230" cy="180" r="14" fill="#E8A020" opacity=".75"/>
-          <circle cx="150" cy="220" r="14" fill="#A8D4F0" opacity=".75"/>
-          <line x1="150" y1="140" x2="90"  y2="80"  stroke="#2E7FC1" stroke-width="2" opacity=".5"/>
-          <line x1="150" y1="140" x2="210" y2="80"  stroke="#2E7FC1" stroke-width="2" opacity=".5"/>
-          <line x1="150" y1="140" x2="70"  y2="180" stroke="#2E7FC1" stroke-width="2" opacity=".5"/>
-          <line x1="150" y1="140" x2="230" y2="180" stroke="#2E7FC1" stroke-width="2" opacity=".5"/>
-          <line x1="150" y1="140" x2="150" y2="220" stroke="#2E7FC1" stroke-width="2" opacity=".5"/>
-          <text x="143" y="145" fill="white" font-size="11" font-family="monospace" font-weight="bold">C</text>
-          <text x="84"  y="84"  fill="#A8D4F0" font-size="9" font-family="monospace">O</text>
-          <text x="205" y="84"  fill="#A8D4F0" font-size="9" font-family="monospace">H</text>
-          <text x="63"  y="185" fill="#E8A020" font-size="9" font-family="monospace">N</text>
-          <text x="224" y="185" fill="#E8A020" font-size="9" font-family="monospace">N</text>
-          <circle cx="150" cy="140" r="54" stroke="rgba(46,127,193,.14)" stroke-width="1" stroke-dasharray="4 4"/>
-          <circle cx="150" cy="140" r="88" stroke="rgba(46,127,193,.07)" stroke-width="1" stroke-dasharray="6 6"/>
-        </svg>
-        <div class="hero-chips">
-          <span class="chip">Paraformaldehyde 91%</span><span class="chip">Melamine</span>
-          <span class="chip">Phthalic Acid</span><span class="chip">Spray Chemicals</span>
-        </div>
+      <div class="hero-right">
+      <div class="hero-actions">
+        <a href="<?php echo $base; ?>/products" class="btn btn-primary btn-lg">⚗️ Our Products</a>
+        <a href="<?php echo $base; ?>/contact" class="btn btn-outline btn-lg">📞 Get a Quote</a>
+      </div>
       </div>
     </div>
   </div>
@@ -162,31 +151,6 @@ $meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New D
   </div>
 </section>
 
-<section class="gallery-preview-section section-pad">
-  <div class="container">
-    <div class="flex-between" style="flex-wrap:wrap;gap:16px">
-      <div><div class="section-label">Photo Gallery</div><h2 class="section-title light">Inside Our <span>Facility</span></h2></div>
-      <a href="<?php echo $base; ?>/gallery" class="btn btn-outline">View Full Gallery</a>
-    </div>
-    <div class="gallery-mosaic" style="margin-top:44px">
-  <?php $shots = [
-    ['img'=>'images/gallery/1.jpg', 'label'=>'Manufacturing Plant'],
-    ['img'=>'images/gallery/2.jpg', 'label'=>'Quality Control Lab'],
-    ['img'=>'images/gallery/3.jpg', 'label'=>'Production Line'],
-    ['img'=>'images/gallery/4.png', 'label'=>'Packaging Unit'],
-  
-  ];
-  foreach ($shots as $i => $s) : ?>
-  <div class="gallery-mosaic-item gb<?php echo $i+1; ?>"
-       onclick="openLightbox('<?php echo apm_asset($s['img']); ?>','<?php echo addslashes($s['label']); ?>')"
-       tabindex="0" role="button" style="background:#0d2035;overflow:hidden;position:relative">
-    <img src="<?php echo apm_asset($s['img']); ?>" alt="<?php echo htmlspecialchars($s['label']); ?>" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0">
-    <div class="gallery-thumb-label" style="position:absolute;bottom:0;left:0;right:0"><span><?php echo htmlspecialchars($s['label']); ?></span></div>
-  </div>
-  <?php endforeach; ?>
-</div>
-  </div>
-</section>
 
 <section class="why-us-light section-pad">
   <div class="container">

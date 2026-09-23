@@ -33,11 +33,28 @@ function apm_title($page_title = '') {
     return $page_title ? htmlspecialchars("$page_title – $site") : htmlspecialchars('Aggarwal Publicity Marketing | Paraformaldehyde Trader Delhi');
 }
 
-function apm_page_banner($title, $subtitle, $breadcrumb_label) {
+function apm_page_banner($title, $subtitle, $breadcrumb_label, $video = false) {
     global $meta_breadcrumb;
     $meta_breadcrumb = $breadcrumb_label;
     $base = APM_BASE_URL;
     echo '<div class="page-banner">';
+    if ($video) {
+        $video_file = is_string($video) ? $video : 'aggarwalpublicity.mp4';
+        echo '  <video class="hero-video-bg" id="page-banner-video" muted loop playsinline preload="metadata" poster="' . apm_asset('images/hero-poster.jpg') . '" aria-hidden="true">';
+        echo '    <source src="' . apm_asset('videos/' . $video_file) . '" type="video/mp4">';
+        echo '  </video>';
+        echo '  <div class="hero-video-overlay" aria-hidden="true"></div>';
+        echo '  <script>';
+        echo '  (function () {';
+        echo '    var v = document.getElementById("page-banner-video");';
+        echo '    if (v && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {';
+        echo '      v.setAttribute("autoplay", "");';
+        echo '      var p = v.play();';
+        echo '      if (p && p.catch) p.catch(function () {});';
+        echo '    }';
+        echo '  })();';
+        echo '  </script>';
+    }
     echo '  <div class="container page-banner-content">';
     echo '    <div class="breadcrumb">';
     echo '      <a href="' . $base . '/">Home</a><span class="sep">›</span><span>' . htmlspecialchars($breadcrumb_label) . '</span>';

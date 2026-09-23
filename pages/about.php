@@ -7,8 +7,51 @@ $meta_keywords = 'ISO certified chemical manufacturer Delhi NCR, chemical trader
 
 <style>
 .about-stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:32px; }
-.about-story-img  { border-radius:var(--radius-md); overflow:hidden; min-height:420px; }
-.about-story-img img { width:100%; height:100%; object-fit:cover; display:block; min-height:420px; }
+
+/* Our Story section background pattern (scoped to this section only) */
+.story-bg { position:relative; overflow:hidden; }
+.story-bg::before {
+  content:'';
+  position:absolute; inset:0; pointer-events:none;
+  background-image:
+    linear-gradient(rgba(11,31,58,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(11,31,58,.035) 1px,transparent 1px);
+  background-size: 44px 44px;
+}
+.story-bg > .container { position:relative; z-index:1; }
+.story-bg .divider { margin-bottom:24px; }
+.story-bg p { margin-bottom:20px !important; }
+
+/* Portrait photo: framed card with offset accent border */
+.about-story-img-wrap { position:relative; max-width:420px; margin:0 auto 40px; }
+.about-story-img-wrap::before {
+  content:'';
+  position:absolute; top:-16px; left:-16px;
+  width:100%; height:100%;
+  border:3px solid var(--accent);
+  border-radius:var(--radius-md);
+  z-index:0;
+}
+.about-story-img  {
+  position:relative; z-index:1;
+  border-radius:var(--radius-md); overflow:hidden;
+  aspect-ratio: 4 / 5;
+  box-shadow:var(--shadow);
+  border:1px solid rgba(11,31,58,.08);
+}
+.about-story-img img { width:100%; height:100%; object-fit:cover; display:block; }
+
+/* Name/title caption card, overlapping the photo's bottom-left edge */
+.about-story-caption {
+  position:absolute; z-index:2;
+  left:20px; bottom:-28px;
+  background:var(--white); border-radius:var(--radius-md);
+  box-shadow:var(--shadow); border:1px solid rgba(11,31,58,.08);
+  padding:14px 22px;
+}
+.about-story-caption h3 { font-family:var(--font-cond); font-size:17px; font-weight:700; color:var(--navy); white-space:nowrap; }
+.about-story-caption span { font-size:12px; color:var(--sky); font-family:var(--font-cond); font-weight:600; letter-spacing:.5px; text-transform:uppercase; }
+
 .book-bank-grid   { background:var(--navy); border-radius:var(--radius-md); padding:48px; margin-bottom:48px; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
 .book-bank-img    { border-radius:var(--radius-md); overflow:hidden; min-height:340px; background:#0d2035; }
 .book-bank-img img{ width:100%; height:100%; object-fit:cover; display:block; min-height:340px; }
@@ -19,11 +62,14 @@ $meta_keywords = 'ISO certified chemical manufacturer Delhi NCR, chemical trader
   .book-bank-img   { min-height:220px !important; }
   .book-bank-img img{ min-height:220px !important; }
   .impact-grid     { grid-template-columns:1fr 1fr !important; padding:24px !important; gap:20px !important; }
+  .about-story-img-wrap { max-width:340px; }
+  .about-story-img-wrap::before { top:-10px; left:-10px; }
+  .about-story-caption { left:14px; bottom:-24px; padding:12px 18px; }
+  .about-story-caption h3 { font-size:15px; }
 }
 @media (max-width: 540px) {
   .about-stats-grid { grid-template-columns:1fr 1fr !important; gap:12px !important; }
-  .about-story-img  { min-height:240px !important; }
-  .about-story-img img { min-height:240px !important; }
+  .about-story-img-wrap { max-width:280px; }
   .impact-grid      { grid-template-columns:1fr 1fr !important; padding:18px !important; gap:14px !important; }
   .book-bank-grid   { padding:20px !important; }
 }
@@ -35,20 +81,20 @@ $meta_keywords = 'ISO certified chemical manufacturer Delhi NCR, chemical trader
 
 <?php apm_page_banner('About <span>APM</span>', 'Over two decades of chemical manufacturing excellence — built on integrity, innovation, and an uncompromising commitment to quality.', 'About Us'); ?>
 
-<section class="section-pad bg-off">
+<section class="section-pad bg-off story-bg">
   <div class="container">
     <div class="grid-2" style="align-items:center">
       <div class="anim-fade-left">
         <div class="section-label">Our Story</div>
         <h2 class="section-title">From <span>Advertising Roots</span> to Chemical Excellence</h2>
         <div class="divider"></div>
-        <p style="font-size:15px;color:var(--grey);line-height:1.8;margin-bottom:18px">
+        <p style="font-size:15px;color:var(--grey);line-height:1.8">
           Founded in 1994 by the Aggarwal family in Delhi, APM began its journey as an advertising and publicity company, building strong relationships and a solid market presence over two decades.
         </p>
-        <p style="font-size:15px;color:var(--grey);line-height:1.8;margin-bottom:18px">
+        <p style="font-size:15px;color:var(--grey);line-height:1.8">
           In 2014, the company strategically diversified into the chemical industry, evolving into a trusted manufacturer and supplier of Paraformaldehyde, Spray Chemicals, Melamine, and Phthalic Acid.
         </p>
-        <p style="font-size:15px;color:var(--grey);line-height:1.8;margin-bottom:18px">
+        <p style="font-size:15px;color:var(--grey);line-height:1.8">
           Today, we serve 500+ clients across pharmaceuticals, agriculture, plastics, textiles, and construction — delivering high-quality products with consistency and reliability across India.
         </p>
         <div class="about-stats-grid">
@@ -62,8 +108,14 @@ $meta_keywords = 'ISO certified chemical manufacturer Delhi NCR, chemical trader
         </div>
       </div>
       <div class="anim-fade-right">
-        <div class="about-story-img">
-          <img src="<?php echo apm_asset('images/team/anil.jpg'); ?>" alt="APM Chemical Facility">
+        <div class="about-story-img-wrap">
+          <div class="about-story-img">
+            <img src="<?php echo apm_asset('images/team/ANILBOGIE.png'); ?>" alt="Anil Aggarwal, Director – Aggarwal Publicity & Marketing Pvt. Ltd.">
+          </div>
+          <div class="about-story-caption">
+            <h3>Anil Aggarwal</h3>
+            <span>Director</span>
+          </div>
         </div>
       </div>
     </div>

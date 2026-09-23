@@ -331,11 +331,21 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.1; }
    HERO SECTION (Home)
 ============================================================ */
 .hero-section {
-  min-height: 100vh;
+  min-height: 78vh;
   background: var(--grad2);
   display: flex; align-items: center;
   padding-top: var(--nav-h);
   position: relative; overflow: hidden;
+}
+.hero-video-bg {
+  position: absolute; inset: 0; z-index: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  pointer-events: none;
+}
+.hero-video-overlay {
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, rgba(7,15,26,.8) 0%, rgba(11,31,58,.75) 100%);
+  pointer-events: none;
 }
 .hero-grid-overlay {
   position: absolute; inset: 0; pointer-events: none;
@@ -389,10 +399,14 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.1; }
   color: var(--silver); max-width: 500px;
   animation: fadeSlideUp .9s .35s ease both;
 }
+.hero-right {
+  display: flex; flex-direction: column; justify-content: center;
+}
 .hero-actions {
-  margin-top: 36px; display: flex; gap: 16px; flex-wrap: wrap;
+  display: flex; gap: 10px; flex-wrap: wrap;
   animation: fadeSlideUp .9s .5s ease both;
 }
+.hero-right .hero-actions .btn { padding: 13px 20px; font-size: 13px; }
 .hero-stats {
   margin-top: 52px; display: grid; grid-template-columns: repeat(3,1fr); gap: 0;
   animation: fadeSlideUp .9s .65s ease both;
@@ -1219,7 +1233,6 @@ select.form-control { cursor:pointer; }
 }
 @media (max-width:900px) {
   .hero-layout      { grid-template-columns:1fr; }
-  .hero-visual-card { display:none; }
   .grid-2           { grid-template-columns:1fr; gap:40px; }
   .about-exp-badge  { left:0; bottom:0; }
   .products-page-grid { grid-template-columns:1fr; }

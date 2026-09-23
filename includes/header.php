@@ -398,7 +398,6 @@ $pg   = $page ?? '';
               <li><a href="<?php echo $base; ?>/products/phthalic-acid">Phthalic Acid</a></li>
             </ul>
           </li>
-          <li<?php echo apm_active('/gallery'); ?>><a href="<?php echo $base; ?>/gallery">Gallery</a></li>
           <li<?php echo apm_active('/quality-certifications'); ?>><a href="<?php echo $base; ?>/quality-certifications">Quality</a></li>
           <li<?php echo apm_active('/news'); ?>><a href="<?php echo $base; ?>/news">News</a></li>
           <li class="nav-cta"><a href="<?php echo $base; ?>/contact">Contact Us</a></li>
@@ -424,7 +423,6 @@ $pg   = $page ?? '';
     <a href="<?php echo $base; ?>/products/melamine">→ Melamine</a>
     <a href="<?php echo $base; ?>/products/phthalic-acid">→ Phthalic Acid</a>
   </div>
-  <a href="<?php echo $base; ?>/gallery">Gallery</a>
   <a href="<?php echo $base; ?>/quality-certifications">Quality &amp; Certifications</a>
   <a href="<?php echo $base; ?>/news">News &amp; Blog</a>
   <div class="mobile-cta"><a href="<?php echo $base; ?>/contact">Contact Us</a></div>

@@ -35,7 +35,6 @@ $routes = [
     '/products/spray-chemicals'  => 'product-spray-chemicals',
     '/products/melamine'         => 'product-melamine',
     '/products/phthalic-acid'    => 'product-phthalic-acid',
-    '/gallery'                   => 'gallery',
     '/quality-certifications'    => 'quality',
     '/news'                      => 'news',
     '/contact'                   => 'contact',

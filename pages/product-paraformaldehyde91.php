@@ -4,7 +4,7 @@ $page_title_raw = 'Paraformaldehyde 91% Supplier | APM';
 $product_schema = ['name' => 'Paraformaldehyde 91%', 'cas' => '30525-89-4'];
 $base = APM_BASE_URL;
 $meta_description = 'Buy high-purity Paraformaldehyde 91% from a trusted Delhi NCR supplier and trader. CAS 30525-89-4. Bulk orders, MSDS/COA available.';
-$meta_keywords = 'Paraformaldehyde 91% supplier India, Paraformaldehyde 91% trader Delhi NCR, Paraformaldehyde 91% dealer, CAS 30525-89-4';
+$meta_keywords = 'Paraformaldehyde 91% supplier India, Paraformaldehyde 91% trader Delhi NCR, Paraformaldehyde 91% dealer, CAS 30525-89-4, Ercros Paraformaldehyde 91%, Balaji Paraformaldehyde 91%';
 ?>
 
 <?php apm_page_banner('Paraformaldehyde 91% <span>(CH₂O)ₙ</span>', 'High-purity solid polymer of formaldehyde for industrial synthesis, resin production, and specialty chemical manufacturing.', 'Paraformaldehyde'); ?>

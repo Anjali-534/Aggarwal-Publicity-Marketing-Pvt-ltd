@@ -2,10 +2,10 @@
 $page_title = 'Products';
 $base = APM_BASE_URL;
 $meta_description = 'Browse our range of industrial chemicals — Paraformaldehyde 91%/96%, Melamine, Phthalic Acid, and Spray Chemicals. Bulk supply across India.';
-$meta_keywords = 'Paraformaldehyde 91% supplier, Paraformaldehyde 96% supplier, Melamine trader India, Phthalic Acid supplier India, Spray Chemicals trader India';
+$meta_keywords = 'Paraformaldehyde 91% supplier, Paraformaldehyde 96% supplier, Melamine trader India, Phthalic Acid supplier India, Spray Chemicals trader India, Ercros Paraformaldehyde, Balaji Paraformaldehyde';
 ?>
 
-<?php apm_page_banner('Our <span>Products</span>', 'Premium-grade specialty chemicals manufactured to the highest purity standards — trusted by industries across India.', 'Products'); ?>
+<?php apm_page_banner('Our <span>Products</span>', 'Premium-grade specialty chemicals manufactured to the highest purity standards — trusted by industries across India.', 'Products', 'aggarwalpublicityproducts.mp4'); ?>
 
 <section class="section-pad bg-off">
   <div class="container">

@@ -1,0 +1,18 @@
+# Local secrets — never commit
+includes/mail-config.php
+.env
+.env.*
+
+# Local-only files
+DO_NOT_UPLOAD_HERE
+test-mail.php
+
+# Dependencies
+/node_modules
+/vendor
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

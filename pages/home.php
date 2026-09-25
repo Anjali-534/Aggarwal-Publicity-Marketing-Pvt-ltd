@@ -97,7 +97,7 @@ $meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New D
           ['slug'=>'paraformaldehyde96','img'=>'images/products/Paraformaldehyde96.jpg','name'=>'Paraformaldehyde 96%','desc'=>'High-purity solid polymer of formaldehyde for resin production, adhesives, and industrial synthesis.','formula'=>'(CH2O)n'],
           ['slug'=>'spray-chemicals', 'img'=>'images/products/spraychemicals.png', 'name'=>'Spray Chemicals', 'desc'=>'Precision-formulated specialty sprays for agricultural, industrial, and surface treatment use.','formula'=>''],
           ['slug'=>'melamine', 'img'=>'images/products/MELAMINE.jpeg', 'name'=>'Melamine','desc'=>'High-grade melamine powder for laminates, adhesives, flame retardants, and resins.','formula'=>'C3H6N6'],
-          ['slug'=>'phthalic-acid', 'img'=>'images/products/phthalic-acid.jpg', 'name'=>'Phthalic Acid', 'desc'=>'Technical-grade phthalic acid for plasticizers, dyes, pharmaceuticals, and polyesters.','formula'=>'C8H6O4'],
+          ['slug'=>'phthalic-acid', 'img'=>'images/products/phthalic-anhydride-powder.jpg', 'name'=>'Phthalic Acid', 'desc'=>'Technical-grade phthalic acid for plasticizers, dyes, pharmaceuticals, and polyesters.','formula'=>'C8H6O4'],
         ];
         foreach ($products as $i => $p) : ?>
         <div class="product-card anim-fade-up" style="flex-shrink:0;width:280px">

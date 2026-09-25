@@ -5,7 +5,7 @@ $meta_description = 'ISO certification and quality standards at Aggarwal Publici
 $meta_keywords = 'ISO certified chemical manufacturer Delhi NCR, ISO 9001 chemical manufacturer India';
 ?>
 
-<?php apm_page_banner('Quality &amp; <span>Certifications</span>', 'Our commitment to quality is not a policy — it is a culture embedded in every process, every team member, and every product we deliver.', 'Quality & Certifications'); ?>
+<?php apm_page_banner('Quality &amp; <span>Certifications</span>', 'Our commitment to quality is not a policy — it is a culture embedded in every process, every team member, and every product we deliver.', 'Quality & Certifications', 'APM_GROUP_logo_reveal_video_20260925133646.mp4'); ?>
 
 <section class="section-pad bg-off">
   <div class="container">

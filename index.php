@@ -36,6 +36,7 @@ $routes = [
     '/products/melamine'         => 'product-melamine',
     '/products/phthalic-acid'    => 'product-phthalic-acid',
     '/quality-certifications'    => 'quality',
+    '/bogie-ai'                  => 'bogie-ai',
     '/news'                      => 'news',
     '/contact'                   => 'contact',
 ];

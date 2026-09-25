@@ -400,6 +400,7 @@ $pg   = $page ?? '';
           </li>
           <li<?php echo apm_active('/quality-certifications'); ?>><a href="<?php echo $base; ?>/quality-certifications">Quality</a></li>
           <li<?php echo apm_active('/news'); ?>><a href="<?php echo $base; ?>/news">News</a></li>
+          <li<?php echo apm_active('/bogie-ai'); ?>><a href="<?php echo $base; ?>/bogie-ai">Sister Concern</a></li>
           <li class="nav-cta"><a href="<?php echo $base; ?>/contact">Contact Us</a></li>
         </ul>
       </nav>
@@ -425,6 +426,7 @@ $pg   = $page ?? '';
   </div>
   <a href="<?php echo $base; ?>/quality-certifications">Quality &amp; Certifications</a>
   <a href="<?php echo $base; ?>/news">News &amp; Blog</a>
+  <a href="<?php echo $base; ?>/bogie-ai">Sister Concern</a>
   <div class="mobile-cta"><a href="<?php echo $base; ?>/contact">Contact Us</a></div>
 </nav>
 

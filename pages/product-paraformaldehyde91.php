@@ -3,11 +3,11 @@ $page_title = 'Paraformaldehyde 91% Supplier & Trader in Delhi NCR';
 $page_title_raw = 'Paraformaldehyde 91% Supplier | APM';
 $product_schema = ['name' => 'Paraformaldehyde 91%', 'cas' => '30525-89-4'];
 $base = APM_BASE_URL;
-$meta_description = 'Buy high-purity Paraformaldehyde 91% from a trusted Delhi NCR supplier and trader. CAS 30525-89-4. Bulk orders, MSDS/COA available.';
-$meta_keywords = 'Paraformaldehyde 91% supplier India, Paraformaldehyde 91% trader Delhi NCR, Paraformaldehyde 91% dealer, CAS 30525-89-4, Ercros Paraformaldehyde 91%, Balaji Paraformaldehyde 91%';
+$meta_description = 'Paraformaldehyde 91% supplier & trader in Delhi NCR, sourced from China, Italy, Russia & other global manufacturers. CAS 30525-89-4. MSDS/COA available.';
+$meta_keywords = 'Paraformaldehyde 91% supplier India, Paraformaldehyde 91% trader Delhi NCR, Paraformaldehyde 91% dealer, CAS 30525-89-4, Ercros Paraformaldehyde 91%, Balaji Paraformaldehyde 91%, Paraformaldehyde China origin, Paraformaldehyde Italy origin, Paraformaldehyde Russia origin, Paraformaldehyde global sourcing';
 ?>
 
-<?php apm_page_banner('Paraformaldehyde 91% <span>(CH₂O)ₙ</span>', 'High-purity solid polymer of formaldehyde for industrial synthesis, resin production, and specialty chemical manufacturing.', 'Paraformaldehyde'); ?>
+<?php apm_page_banner('Paraformaldehyde 91% <span>(CH₂O)ₙ</span>', 'High-purity solid polymer of formaldehyde for industrial synthesis, resin production, and specialty chemical manufacturing.', 'Paraformaldehyde', false, 'products/' . rawurlencode('paraformadehyde 91 postwe.png')); ?>
 
 <section class="section-pad bg-off">
   <div class="container">
@@ -16,12 +16,14 @@ $meta_keywords = 'Paraformaldehyde 91% supplier India, Paraformaldehyde 91% trad
         <div class="product-detail-img product-carousel" style="background:#0d2035;overflow:hidden;border-radius:var(--radius-md)">
           <img class="product-carousel-slide active" data-caption="Ercros" src="<?php echo apm_asset('images/products/91-ercros-paraformaldehyde-chemical.jpg'); ?>" alt="Ercros brand Paraformaldehyde 91% – high purity chemical powder" loading="eager">
           <img class="product-carousel-slide" data-caption="Balaji" src="<?php echo apm_asset('images/gallery/6.jfif'); ?>" alt="Balaji brand Paraformaldehyde – high purity chemical powder" loading="lazy">
+          <img class="product-carousel-slide" data-caption="China" src="<?php echo apm_asset('images/products/Paraformaldehyde-CAS-30525-89-4-1China.jpg'); ?>" alt="China-origin Paraformaldehyde – 25kg bag, high purity chemical powder" loading="lazy">
           <button type="button" class="product-carousel-btn prev" onclick="apmCarouselNav(this,-1)" aria-label="Previous brand photo">‹</button>
           <button type="button" class="product-carousel-btn next" onclick="apmCarouselNav(this,1)" aria-label="Next brand photo">›</button>
           <div class="product-carousel-caption">Ercros</div>
           <div class="product-carousel-dots">
             <span class="product-carousel-dot active" onclick="apmCarouselGoTo(this,0)" role="button" tabindex="0" aria-label="Show Ercros photo"></span>
             <span class="product-carousel-dot" onclick="apmCarouselGoTo(this,1)" role="button" tabindex="0" aria-label="Show Balaji photo"></span>
+            <span class="product-carousel-dot" onclick="apmCarouselGoTo(this,2)" role="button" tabindex="0" aria-label="Show China photo"></span>
           </div>
         </div>
         <div class="product-detail-actions">
@@ -36,6 +38,7 @@ $meta_keywords = 'Paraformaldehyde 91% supplier India, Paraformaldehyde 91% trad
             <div><strong style="color:var(--navy)">Form:</strong> Powder / Granular</div>
             <div><strong style="color:var(--navy)">Appearance:</strong> White solid</div>
             <div><strong style="color:var(--navy)">HS Code:</strong> 2912 60 00</div>
+            <div><strong style="color:var(--navy)">Available Origins:</strong> China, Italy, Russia, Ercros (Spain), Balaji (India)</div>
           </div>
         </div>
       </div>

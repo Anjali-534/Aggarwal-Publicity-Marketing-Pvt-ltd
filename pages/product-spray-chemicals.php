@@ -7,7 +7,7 @@ $meta_description = 'Spray chemicals supplier and trader in Delhi NCR, India. Re
 $meta_keywords = 'Spray Chemicals supplier India, Spray Chemicals trader Delhi NCR';
 ?>
 
-<?php apm_page_banner('Spray <span>Chemicals</span>', 'Precision-formulated specialty spray blends for agriculture, industrial surface treatment, and pest control — custom formulations available.', 'Spray Chemicals'); ?>
+<?php apm_page_banner('Spray <span>Chemicals</span>', 'Precision-formulated specialty spray blends for agriculture, industrial surface treatment, and pest control — custom formulations available.', 'Spray Chemicals', false, 'products/' . rawurlencode('spray postwe.png')); ?>
 
 <section class="section-pad bg-off">
   <div class="container">

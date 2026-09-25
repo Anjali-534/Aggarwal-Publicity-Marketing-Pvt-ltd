@@ -33,7 +33,7 @@ function apm_title($page_title = '') {
     return $page_title ? htmlspecialchars("$page_title – $site") : htmlspecialchars('Aggarwal Publicity Marketing | Paraformaldehyde Trader Delhi');
 }
 
-function apm_page_banner($title, $subtitle, $breadcrumb_label, $video = false) {
+function apm_page_banner($title, $subtitle, $breadcrumb_label, $video = false, $bg_image = false) {
     global $meta_breadcrumb;
     $meta_breadcrumb = $breadcrumb_label;
     $base = APM_BASE_URL;
@@ -54,6 +54,9 @@ function apm_page_banner($title, $subtitle, $breadcrumb_label, $video = false) {
         echo '    }';
         echo '  })();';
         echo '  </script>';
+    } elseif ($bg_image) {
+        echo '  <img class="hero-video-bg" src="' . apm_asset('images/' . $bg_image) . '" alt="" aria-hidden="true">';
+        echo '  <div class="hero-video-overlay" aria-hidden="true"></div>';
     }
     echo '  <div class="container page-banner-content">';
     echo '    <div class="breadcrumb">';

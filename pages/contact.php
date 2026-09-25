@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['apm_contact'])) {
 }
 ?>
 
-<?php apm_page_banner('Get In <span>Touch</span>', 'Our team is ready to assist with product inquiries, bulk pricing, technical specifications, and order placement.', 'Contact'); ?>
+<?php apm_page_banner('Get In <span>Touch</span>', 'Our team is ready to assist with product inquiries, bulk pricing, technical specifications, and order placement.', 'Contact', 'APM_GROUP_logo_reveal_video_20260925133646.mp4'); ?>
 
 <section class="section-pad bg-off">
   <div class="container">

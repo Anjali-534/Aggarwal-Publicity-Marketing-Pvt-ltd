@@ -7,7 +7,7 @@ $meta_description = 'Melamine supplier and trader in Delhi NCR, India. High puri
 $meta_keywords = 'Melamine supplier India, Melamine trader Delhi NCR, Melamine CAS 108-78-1';
 ?>
 
-<?php apm_page_banner('Melamine <span>C₃H₆N₆</span>', 'High-grade melamine powder for laminates, resins, flame retardants, and specialty coatings — 99.8% purity guaranteed.', 'Melamine'); ?>
+<?php apm_page_banner('Melamine <span>C₃H₆N₆</span>', 'High-grade melamine powder for laminates, resins, flame retardants, and specialty coatings — 99.8% purity guaranteed.', 'Melamine', false, 'products/' . rawurlencode('melamine postwe.png')); ?>
 
 <section class="section-pad bg-off">
   <div class="container">

@@ -7,14 +7,14 @@ $meta_description = 'Phthalic Acid supplier and trader in Delhi NCR, India. High
 $meta_keywords = 'Phthalic Acid supplier India, Phthalic Acid trader Delhi NCR, Phthalic Acid CAS 88-99-3';
 ?>
 
-<?php apm_page_banner('Phthalic Acid <span>C₈H₆O₄</span>', 'Technical-grade phthalic acid for plasticizers, synthetic dyes, pharmaceutical intermediates, and polyester resin manufacturing.', 'Phthalic Acid'); ?>
+<?php apm_page_banner('Phthalic Acid <span>C₈H₆O₄</span>', 'Technical-grade phthalic acid for plasticizers, synthetic dyes, pharmaceutical intermediates, and polyester resin manufacturing.', 'Phthalic Acid', false, 'products/' . rawurlencode('phthalic postwe.png')); ?>
 
 <section class="section-pad bg-off">
   <div class="container">
     <div class="product-detail-layout">
       <div class="product-detail-sticky">
         <div class="product-detail-img" style="background:#0d2035;overflow:hidden;border-radius:var(--radius-md)">
-          <img src="<?php echo apm_asset('images/products/paraformaldehyde.jpg'); ?>" alt="Phthalic Acid – high purity industrial chemical" style="width:100%;height:100%;object-fit:cover;display:block">
+          <img src="<?php echo apm_asset('images/products/phthalic-anhydride-powder.jpg'); ?>" alt="Phthalic Acid – high purity industrial chemical powder" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div class="product-detail-actions">
           <a href="<?php echo $base; ?>/contact" class="btn btn-primary btn-block">📩 Request a Quote</a>

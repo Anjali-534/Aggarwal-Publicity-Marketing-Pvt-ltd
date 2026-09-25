@@ -5,7 +5,7 @@ $meta_description = 'Latest news and updates from Aggarwal Publicity & Marketing
 $meta_keywords = 'APM chemical industry news, chemical manufacturer updates India';
 ?>
 
-<?php apm_page_banner('News &amp; <span>Insights</span>', 'Industry updates, chemical safety news, product announcements, and company milestones from the APM team.', 'News & Blog'); ?>
+<?php apm_page_banner('News &amp; <span>Insights</span>', 'Industry updates, chemical safety news, product announcements, and company milestones from the APM team.', 'News & Blog', 'APM_GROUP_logo_reveal_video_20260925133646.mp4'); ?>
 
 <section class="section-pad bg-off">
   <div class="container">

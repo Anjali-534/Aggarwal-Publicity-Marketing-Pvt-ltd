@@ -79,7 +79,7 @@ $meta_keywords = 'ISO certified chemical manufacturer Delhi NCR, chemical trader
 }
 </style>
 
-<?php apm_page_banner('About <span>APM</span>', 'Over two decades of chemical manufacturing excellence — built on integrity, innovation, and an uncompromising commitment to quality.', 'About Us'); ?>
+<?php apm_page_banner('About <span>APM</span>', 'Over two decades of chemical manufacturing excellence — built on integrity, innovation, and an uncompromising commitment to quality.', 'About Us', 'APM_GROUP_logo_reveal_video_20260925133646.mp4'); ?>
 
 <section class="section-pad bg-off story-bg">
   <div class="container">
@@ -223,12 +223,10 @@ $meta_keywords = 'ISO certified chemical manufacturer Delhi NCR, chemical trader
     </div>
     <div class="team-grid">
       <?php $team = [
-        ['avatar'=>'images/team/anil.jpg',   'name'=>'Anil Aggarwal',  'role'=>'Director',          'bio'=>'Founder with 25+ years in specialty chemicals. Drives strategy, quality vision, and pan-India partnerships.'],
-        ['avatar'=>'images/team/priya.jpg',  'name'=>'Dhriti Aggarwal','role'=>'Head of R&D',        'bio'=>'PhD Chemistry, IIT Delhi. Leads product innovation, formulation, and in-house laboratory operations.'],
-        ['avatar'=>'images/team/anjali.png', 'name'=>'Anjali Aggarwal','role'=>'Plant Manager',      'bio'=>'15+ years in chemical production. Oversees daily manufacturing, safety protocols, and capacity planning.'],
-        ['avatar'=>'images/team/anjali.jpg', 'name'=>'Tushar Aggarwal','role'=>'Sales Director',     'bio'=>'Pan-India sales network. Manages 500+ client relationships across pharma, agriculture, and construction.'],
-        ['avatar'=>'images/team/suresh.jpg', 'name'=>'Suresh Gupta',   'role'=>'Quality Assurance',  'bio'=>'NABL-certified QA lead. Ensures every batch meets ISO, BIS, and customer specification requirements.'],
-        ['avatar'=>'images/team/rekha.jpg',  'name'=>'Rekha Joshi',    'role'=>'Logistics Head',     'bio'=>'20 years in chemical logistics. Manages safe, compliant delivery across 25+ states with zero-incident record.'],
+        ['avatar'=>'images/team/ANILBOGIE.png',                         'name'=>'Anil Aggarwal',  'role'=>'Director',                        'bio'=>'Founder with 25+ years in specialty chemicals. Drives strategy, quality vision, and pan-India partnerships.'],
+        ['avatar'=>'images/team/DHRITIBOGIE.png',                       'name'=>'Dhriti Aggarwal','role'=>'Head of R&D',                     'bio'=>'PhD Chemistry, IIT Delhi. Leads product innovation, formulation, and in-house laboratory operations.'],
+        ['avatar'=>'images/team/' . rawurlencode('ANJALI BOGIE.png'),   'name'=>'Anjali Aggarwal','role'=>'Software Developer & Co-Founder', 'bio'=>''],
+        ['avatar'=>'images/team/MADHUBOGIE.png',                        'name'=>'Madhu Aggarwal', 'role'=>'Director',                        'bio'=>''],
       ];
       foreach ($team as $m) : ?>
       <div class="team-card anim-fade-up">

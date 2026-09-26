@@ -90,10 +90,10 @@ $meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New D
       <h2 class="section-title light">Premium <span>Chemical</span> Products</h2>
       <p class="section-sub light center">From industrial intermediates to specialty chemicals — engineered to deliver results.</p>
     </div>
-    <div class="products-carousel" style="position:relative;margin-top:56px">
+    <div class="products-carousel" style="margin-top:56px">
       <button type="button" class="product-carousel-btn prev" onclick="apmTrackCarouselNav(-1)" aria-label="Previous products">‹</button>
       <button type="button" class="product-carousel-btn next" onclick="apmTrackCarouselNav(1)" aria-label="Next products">›</button>
-      <div class="products-scroll-wrapper" style="overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none">
+      <div class="products-scroll-wrapper" style="overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;max-width:840px;margin:0 auto">
       <div class="products-scroll-track" id="products-carousel-track" style="display:flex;gap:24px;padding-bottom:8px;min-width:min-content">
         <?php $products = [
           ['slug'=>'paraformaldehyde91','img'=>'images/products/Paraformaldehyde91.jpg','name'=>'Paraformaldehyde 91%','desc'=>'High-purity solid polymer of formaldehyde for resin production, adhesives, and industrial synthesis.','formula'=>'(CH2O)n'],
@@ -103,7 +103,7 @@ $meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New D
           ['slug'=>'phthalic-acid', 'img'=>'images/products/phthalic-anhydride-powder.png', 'name'=>'Phthalic Acid', 'desc'=>'Technical-grade phthalic acid for plasticizers, dyes, pharmaceuticals, and polyesters.','formula'=>'C8H6O4'],
         ];
         foreach ($products as $i => $p) : ?>
-        <div class="product-card anim-fade-up" style="flex-shrink:0;width:280px">
+        <div class="product-card anim-fade-up" style="flex-shrink:0;width:240px">
          <div class="product-card-thumb" style="background:#0d2035;position:relative;overflow:hidden">
   <img src="<?php echo apm_asset($p['img']); ?>" alt="<?php echo htmlspecialchars($p['name']); ?>" style="width:100%;height:100%;object-fit:cover;display:block">
   <span class="product-card-formula" style="position:absolute;bottom:8px;right:8px"><?php echo htmlspecialchars($p['formula']); ?></span>
@@ -111,7 +111,7 @@ $meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New D
           <div class="product-card-body">
             <h3><?php echo htmlspecialchars($p['name']); ?></h3>
             <p><?php echo htmlspecialchars($p['desc']); ?></p>
-            <a href="<?php echo $base; ?>/products/<?php echo $p['slug']; ?>" class="btn btn-primary btn-sm btn-block">Know More &rarr;</a>
+            <a href="<?php echo $base; ?>/products/<?php echo $p['slug']; ?>" class="btn btn-primary btn-sm">Know More &rarr;</a>
           </div>
         </div>
         <?php endforeach; ?>

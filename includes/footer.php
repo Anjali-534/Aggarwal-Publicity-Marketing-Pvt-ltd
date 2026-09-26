@@ -101,6 +101,6 @@ $base     = APM_BASE_URL;
 }
 </style>
 
-<script src="<?php echo apm_asset('js/main.js'); ?>?v=<?php echo APM_VERSION; ?>"></script>
+<script src="<?php echo apm_asset('js/main.js'); ?>?v=<?php echo APM_JS_VERSION; ?>"></script>
 </body>
 </html>

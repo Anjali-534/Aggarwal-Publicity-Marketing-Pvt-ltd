@@ -5,8 +5,12 @@
  * Pure PHP site — no framework required.
  */
 
+error_reporting(0);
+ini_set('display_errors', '0');
+
 define('APM_ROOT', __DIR__);
-define('APM_VERSION', '1.0.0');
+define('APM_CSS_VERSION', filemtime(APM_ROOT . '/assets/css/main.css'));
+define('APM_JS_VERSION', filemtime(APM_ROOT . '/assets/js/main.js'));
 
 define('APM_CONFIG', [
     'site_name'  => 'Aggarwal Publicity Marketing Pvt. Ltd.',

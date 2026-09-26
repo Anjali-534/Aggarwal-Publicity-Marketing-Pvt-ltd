@@ -40,7 +40,7 @@ function apm_page_banner($title, $subtitle, $breadcrumb_label, $video = false, $
     echo '<div class="page-banner">';
     if ($video) {
         $video_file = is_string($video) ? $video : 'aggarwalpublicity.mp4';
-        echo '  <video class="hero-video-bg" id="page-banner-video" muted loop playsinline preload="metadata" poster="' . apm_asset('images/hero-poster.jpg') . '" aria-hidden="true">';
+        echo '  <video class="hero-video-bg" id="page-banner-video" muted loop playsinline preload="metadata" aria-hidden="true">';
         echo '    <source src="' . apm_asset('videos/' . $video_file) . '" type="video/mp4">';
         echo '  </video>';
         echo '  <div class="hero-video-overlay" aria-hidden="true"></div>';

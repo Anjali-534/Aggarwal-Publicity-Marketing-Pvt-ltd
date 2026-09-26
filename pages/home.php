@@ -7,7 +7,7 @@ $meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New D
 ?>
 
 <section class="hero-section" aria-label="Hero">
-  <video class="hero-video-bg" id="hero-video" muted loop playsinline preload="metadata" poster="<?php echo apm_asset('images/hero-poster.jpg'); ?>" aria-hidden="true">
+  <video class="hero-video-bg" id="hero-video" muted loop playsinline preload="metadata" aria-hidden="true">
     <source src="<?php echo apm_asset('videos/aggarwalpublicity.mp4'); ?>" type="video/mp4">
   </video>
   <div class="hero-video-overlay" aria-hidden="true"></div>

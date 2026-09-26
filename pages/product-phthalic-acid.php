@@ -14,7 +14,7 @@ $meta_keywords = 'Phthalic Acid supplier India, Phthalic Acid trader Delhi NCR, 
     <div class="product-detail-layout">
       <div class="product-detail-sticky">
         <div class="product-detail-img" style="background:#0d2035;overflow:hidden;border-radius:var(--radius-md)">
-          <img src="<?php echo apm_asset('images/products/phthalic-anhydride-powder.jpg'); ?>" alt="Phthalic Acid – high purity industrial chemical powder" style="width:100%;height:100%;object-fit:cover;display:block">
+          <img src="<?php echo apm_asset('images/products/phthalic-anhydride-powder.png'); ?>" alt="Phthalic Acid – high purity industrial chemical powder" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div class="product-detail-actions">
           <a href="<?php echo $base; ?>/contact" class="btn btn-primary btn-block">📩 Request a Quote</a>

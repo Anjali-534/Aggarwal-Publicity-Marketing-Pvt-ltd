@@ -14,7 +14,7 @@ $meta_keywords = 'Paraformaldehyde 91% supplier India, Paraformaldehyde 91% trad
     <div class="product-detail-layout">
       <div class="product-detail-sticky">
         <div class="product-detail-img product-carousel" style="background:#0d2035;overflow:hidden;border-radius:var(--radius-md)">
-          <img class="product-carousel-slide active" data-caption="Ercros" src="<?php echo apm_asset('images/products/91-ercros-paraformaldehyde-chemical.jpg'); ?>" alt="Ercros brand Paraformaldehyde 91% – high purity chemical powder" loading="eager">
+          <img class="product-carousel-slide active" data-caption="Ercros" src="<?php echo apm_asset('images/products/91-ercros-paraformaldehyde-chemical.png'); ?>" alt="Ercros brand Paraformaldehyde 91% – high purity chemical powder" loading="eager">
           <img class="product-carousel-slide" data-caption="Balaji" src="<?php echo apm_asset('images/gallery/6.jfif'); ?>" alt="Balaji brand Paraformaldehyde – high purity chemical powder" loading="lazy">
           <img class="product-carousel-slide" data-caption="China" src="<?php echo apm_asset('images/products/Paraformaldehyde-CAS-30525-89-4-1China.jpg'); ?>" alt="China-origin Paraformaldehyde – 25kg bag, high purity chemical powder" loading="lazy">
           <button type="button" class="product-carousel-btn prev" onclick="apmCarouselNav(this,-1)" aria-label="Previous brand photo">‹</button>

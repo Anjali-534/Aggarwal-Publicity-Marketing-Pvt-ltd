@@ -5,6 +5,7 @@
 
 // Auto-detect base URL (works at root OR in any subfolder like /apm-php/)
 $script_dir = dirname($_SERVER['PHP_SELF']);
+$script_dir = str_replace('\\', '/', $script_dir);
 $script_dir = rtrim($script_dir, '/');
 define('APM_BASE_URL', $script_dir);
 

@@ -31,11 +31,11 @@ $meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New D
           ISO Certified Manufacturer &mdash; Est. 1994
         </div>
         <h1 class="hero-title">
-          <span class="line-gold">Industrial </span>
+          <span class="line-gold">Industrial & </span>
           <span class="line-accent">Laboratory Chemicals</span>
           & Solvents
         </h1>
-        <p class="hero-desc">Aggarwal Publicity & Marketing Pvt. Ltd. &mdash; India's trusted chemical Distributors,Traders,Importers and Exporters — supplying high-purity Paraformaldehyde, Spray Chemicals, Melamine, and Phthalic Acid. Delivering quality to industries since 2001.</p>
+        <p class="hero-desc">Aggarwal Publicity & Marketing Pvt. Ltd. &mdash; India's trusted chemical Distributors,Traders,Importers and Exporters —  Paraformaldehyde, Spray Chemicals, Melamine, and Phthalic Acid. Delivering quality to industries since 2001.</p>
         <div class="hero-stats">
           <div class="hero-stat"><strong>20<sup>+</sup></strong><small>Years Experience</small></div>
           <div class="hero-stat"><strong>500<sup>+</sup></strong><small>Clients Served</small></div>
@@ -90,14 +90,17 @@ $meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New D
       <h2 class="section-title light">Premium <span>Chemical</span> Products</h2>
       <p class="section-sub light center">From industrial intermediates to specialty chemicals — engineered to deliver results.</p>
     </div>
-    <div class="products-scroll-wrapper" style="margin-top:56px;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none">
-      <div class="products-scroll-track" style="display:flex;gap:24px;padding-bottom:8px;min-width:min-content">
+    <div class="products-carousel" style="position:relative;margin-top:56px">
+      <button type="button" class="product-carousel-btn prev" onclick="apmTrackCarouselNav(-1)" aria-label="Previous products">‹</button>
+      <button type="button" class="product-carousel-btn next" onclick="apmTrackCarouselNav(1)" aria-label="Next products">›</button>
+      <div class="products-scroll-wrapper" style="overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none">
+      <div class="products-scroll-track" id="products-carousel-track" style="display:flex;gap:24px;padding-bottom:8px;min-width:min-content">
         <?php $products = [
           ['slug'=>'paraformaldehyde91','img'=>'images/products/Paraformaldehyde91.jpg','name'=>'Paraformaldehyde 91%','desc'=>'High-purity solid polymer of formaldehyde for resin production, adhesives, and industrial synthesis.','formula'=>'(CH2O)n'],
           ['slug'=>'paraformaldehyde96','img'=>'images/products/Paraformaldehyde96.jpg','name'=>'Paraformaldehyde 96%','desc'=>'High-purity solid polymer of formaldehyde for resin production, adhesives, and industrial synthesis.','formula'=>'(CH2O)n'],
           ['slug'=>'spray-chemicals', 'img'=>'images/products/spraychemicals.png', 'name'=>'Spray Chemicals', 'desc'=>'Precision-formulated specialty sprays for agricultural, industrial, and surface treatment use.','formula'=>''],
-          ['slug'=>'melamine', 'img'=>'images/products/MELAMINE.jpeg', 'name'=>'Melamine','desc'=>'High-grade melamine powder for laminates, adhesives, flame retardants, and resins.','formula'=>'C3H6N6'],
-          ['slug'=>'phthalic-acid', 'img'=>'images/products/phthalic-anhydride-powder.jpg', 'name'=>'Phthalic Acid', 'desc'=>'Technical-grade phthalic acid for plasticizers, dyes, pharmaceuticals, and polyesters.','formula'=>'C8H6O4'],
+          ['slug'=>'melamine', 'img'=>'images/products/MELAMINE.png', 'name'=>'Melamine','desc'=>'High-grade melamine powder for laminates, adhesives, flame retardants, and resins.','formula'=>'C3H6N6'],
+          ['slug'=>'phthalic-acid', 'img'=>'images/products/phthalic-anhydride-powder.png', 'name'=>'Phthalic Acid', 'desc'=>'Technical-grade phthalic acid for plasticizers, dyes, pharmaceuticals, and polyesters.','formula'=>'C8H6O4'],
         ];
         foreach ($products as $i => $p) : ?>
         <div class="product-card anim-fade-up" style="flex-shrink:0;width:280px">
@@ -112,6 +115,7 @@ $meta_keywords = 'chemical supplier Delhi NCR, industrial chemicals trader New D
           </div>
         </div>
         <?php endforeach; ?>
+      </div>
       </div>
     </div>
     <div class="text-center" style="margin-top:44px"><a href="<?php echo $base; ?>/products" class="btn btn-outline">View All Products</a></div>

@@ -14,7 +14,7 @@ $meta_keywords = 'Melamine supplier India, Melamine trader Delhi NCR, Melamine C
     <div class="product-detail-layout">
       <div class="product-detail-sticky">
         <div class="product-detail-img" style="background:#0d2035;overflow:hidden;border-radius:var(--radius-md)">
-          <img src="<?php echo apm_asset('images/products/MELAMINE.jpeg'); ?>" alt="Melamine" style="width:100%;height:100%;object-fit:cover;display:block">
+          <img src="<?php echo apm_asset('images/products/MELAMINE.png'); ?>" alt="Melamine" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div class="product-detail-actions">
           <a href="<?php echo $base; ?>/contact" class="btn btn-primary btn-block">📩 Request a Quote</a>

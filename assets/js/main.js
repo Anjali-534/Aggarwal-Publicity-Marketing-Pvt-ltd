@@ -132,6 +132,51 @@
     apmCarouselShow(root, index);
   };
 
+  /* ── Homepage Product Track Carousel ── */
+  (function () {
+    const track = document.getElementById('products-carousel-track');
+    if (!track) return;
+    const scroller = track.closest('.products-scroll-wrapper');
+    const root = track.closest('.products-carousel');
+    if (!scroller || !root) return;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let timer = null;
+
+    function stepWidth() {
+      const card = track.querySelector('.product-card');
+      if (!card) return scroller.clientWidth;
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      return card.getBoundingClientRect().width + gap;
+    }
+    function atEnd() {
+      return scroller.scrollLeft + scroller.clientWidth >= scroller.scrollWidth - 2;
+    }
+    function advance(dir) {
+      if (dir > 0 && atEnd()) {
+        scroller.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        scroller.scrollBy({ left: dir * stepWidth(), behavior: 'smooth' });
+      }
+    }
+    window.apmTrackCarouselNav = function (dir) { advance(dir); };
+
+    function start() {
+      if (reduced || timer) return;
+      timer = setInterval(() => advance(1), 3800);
+    }
+    function stop() {
+      clearInterval(timer);
+      timer = null;
+    }
+    root.addEventListener('mouseenter', stop);
+    root.addEventListener('mouseleave', start);
+    root.addEventListener('focusin', stop);
+    root.addEventListener('focusout', (e) => {
+      if (!root.contains(e.relatedTarget)) start();
+    });
+    start();
+  })();
+
   /* ── Contact Form ── */
   const contactForm = document.getElementById('apm-contact-form');
   if (contactForm) {
